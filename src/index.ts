@@ -1,33 +1,31 @@
-import {map, take, interval, Subscription, range, Subject, filter, takeUntil} from "rxjs"
+import {map, take, interval, Subscription, range, Subject, filter, takeUntil, from, Observable, fromEvent, debounceTime, switchMap} from "rxjs"
+
+const URL = "http://localhost:3000/movies/"
 
 
-function pokreni_interval(control$: Subject<any>) : Subscription
+
+
+async function fetchuj_podatke(title: string)
 {
-    const tok$: Subscription = interval(500).pipe(
-        filter(x => x % 2 === 0),
-        map(x => x + 1),
-        takeUntil(control$)
-    ).subscribe(x => {console.log("Broj: " + x)})
-
-    return tok$
+    const resp = await fetch(URL + title)
+    const lista = await resp.json()
+    return lista
 }
 
-function make_button1(control$: Subject<any>)
+function dodaj_input()
 {
-   const button = document.createElement("button")
-   button.innerHTML = "STOP DUGME"
-   button.onclick = () => 
-    {
-        control$.next(1)
-        control$.complete()
-        console.log("ZAVRSIO SAM SUBSCRIPTION")
-    }
-   document.body.appendChild(button) 
+    const inputEL = document.createElement("input")
+    document.body.appendChild(inputEL)
+
+    fromEvent(inputEL, "input").pipe(
+        debounceTime(500),
+        map(ev => (<HTMLInputElement>ev.target).value),
+        filter(x => x.length >= 3),
+        switchMap(x => fetchuj_podatke(x))
+    ).subscribe(movie => {console.log("Fetchovao si: ", movie)})
 }
 
+dodaj_input()
 
-const kontrola_toka$ = new Subject()
 
-make_button1(kontrola_toka$)
-pokreni_interval(kontrola_toka$)
-
+//from(fetchuj_podatke("movies/harry_potter")).subscribe(el => {console.log("dobio sam: ", el)})
