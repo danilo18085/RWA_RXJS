@@ -69,7 +69,7 @@ export function crtaj_kontejner_za_jednu_igricu(igra : igrica) : HTMLDivElement
     kontejner_igrica.id = ("kontejner_igrica_" + igra.id)
 
     kontejner_igrica.innerHTML = `
-     <img src="./src/Slike/${igra.id}.jpg" alt="FarCry6" class="image_wrapper">
+     <img src="./src/Slike/${igra.id}.jpg" alt="${igra.ime}" class="image_wrapper">
      <h3>${igra.ime}</h3>
      <p>Zanr: ${igra.zanr}</p>
      <p>Godina: ${igra.godina}</p>
@@ -88,5 +88,12 @@ export function crtaj_kontejner_za_jednu_igricu(igra : igrica) : HTMLDivElement
 
 function izracunaj_cenu(osnovna_cena : number, popust : number) : string
 {
-    return ((osnovna_cena * popust) / 100).toFixed(2)
+    return ((osnovna_cena * (100 - popust)) / 100 - 0.01).toFixed(2)
+}
+
+export function crtaj_header() : void
+{
+    const h = document.createElement("div")
+    h.className = "header"
+    document.body.appendChild(h)
 }

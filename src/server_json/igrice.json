@@ -48,12 +48,12 @@
   },
   {
     "id": "6",
-    "ime": "Elden Ring",
-    "zanr": "RPG",
-    "godina": 2022,
-    "rating": 9.6,
-    "popust": 20,
-    "osnovna_cena": 60.00
+    "ime": "L.A. Noire",
+    "zanr": "Detective",
+    "godina": 2011,
+    "rating": 8.5,
+    "popust": 45,
+    "osnovna_cena": 30.00
   },
   {
     "id": "7",
@@ -279,6 +279,15 @@
     "rating": 8.7,
     "popust": 55,
     "osnovna_cena": 40.00
+  },
+    {
+    "id": "32",
+    "ime": "Elden Ring",
+    "zanr": "RPG",
+    "godina": 2022,
+    "rating": 9.6,
+    "popust": 20,
+    "osnovna_cena": 60.00
   }
 ]
 
