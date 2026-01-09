@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch",
-    "api": "json-server --watch ./db/test.json"
+    "aplikacija": "webpack --watch",
+    "server": "json-server --watch ./src/server_json/igrice.json"
   },
   "author": "",
   "license": "ISC",

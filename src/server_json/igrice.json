@@ -1,0 +1,285 @@
+{
+    "igrice": 
+    [
+  {
+    "id": "1",
+    "ime": "Far Cry 6",
+    "zanr": "Action",
+    "godina": 2021,
+    "rating": 8.1,
+    "popust": 15,
+    "osnovna_cena": 50.00
+  },
+  {
+    "id": "2",
+    "ime": "The Witcher 3: Wild Hunt",
+    "zanr": "RPG",
+    "godina": 2015,
+    "rating": 9.6,
+    "popust": 40,
+    "osnovna_cena": 40.00
+  },
+  {
+    "id": "3",
+    "ime": "Cyberpunk 2077",
+    "zanr": "RPG",
+    "godina": 2020,
+    "rating": 8.0,
+    "popust": 50,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "4",
+    "ime": "Red Dead Redemption 2",
+    "zanr": "Action",
+    "godina": 2018,
+    "rating": 9.7,
+    "popust": 35,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "5",
+    "ime": "GTA V",
+    "zanr": "Action",
+    "godina": 2013,
+    "rating": 9.5,
+    "popust": 60,
+    "osnovna_cena": 30.00
+  },
+  {
+    "id": "6",
+    "ime": "Elden Ring",
+    "zanr": "RPG",
+    "godina": 2022,
+    "rating": 9.6,
+    "popust": 20,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "7",
+    "ime": "God of War",
+    "zanr": "Action",
+    "godina": 2018,
+    "rating": 9.6,
+    "popust": 45,
+    "osnovna_cena": 50.00
+  },
+  {
+    "id": "8",
+    "ime": "God of War Ragnarök",
+    "zanr": "Action",
+    "godina": 2022,
+    "rating": 9.5,
+    "popust": 15,
+    "osnovna_cena": 70.00
+  },
+  {
+    "id": "9",
+    "ime": "Assassin's Creed Valhalla",
+    "zanr": "Action",
+    "godina": 2020,
+    "rating": 8.4,
+    "popust": 55,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "10",
+    "ime": "Assassin's Creed Odyssey",
+    "zanr": "Action",
+    "godina": 2018,
+    "rating": 8.7,
+    "popust": 65,
+    "osnovna_cena": 50.00
+  },
+  {
+    "id": "11",
+    "ime": "Horizon Zero Dawn",
+    "zanr": "Action",
+    "godina": 2017,
+    "rating": 8.9,
+    "popust": 50,
+    "osnovna_cena": 50.00
+  },
+  {
+    "id": "12",
+    "ime": "Horizon Forbidden West",
+    "zanr": "Action",
+    "godina": 2022,
+    "rating": 8.8,
+    "popust": 25,
+    "osnovna_cena": 70.00
+  },
+  {
+    "id": "13",
+    "ime": "Resident Evil 4 Remake",
+    "zanr": "Horror",
+    "godina": 2023,
+    "rating": 9.2,
+    "popust": 30,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "14",
+    "ime": "Resident Evil Village",
+    "zanr": "Horror",
+    "godina": 2021,
+    "rating": 8.5,
+    "popust": 40,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "15",
+    "ime": "Dark Souls III",
+    "zanr": "RPG",
+    "godina": 2016,
+    "rating": 9.1,
+    "popust": 60,
+    "osnovna_cena": 50.00
+  },
+  {
+    "id": "16",
+    "ime": "Sekiro: Shadows Die Twice",
+    "zanr": "Action",
+    "godina": 2019,
+    "rating": 9.3,
+    "popust": 35,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "17",
+    "ime": "Death Stranding",
+    "zanr": "Adventure",
+    "godina": 2019,
+    "rating": 8.6,
+    "popust": 55,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "18",
+    "ime": "Spider-Man Remastered",
+    "zanr": "Action",
+    "godina": 2020,
+    "rating": 9.2,
+    "popust": 40,
+    "osnovna_cena": 50.00
+  },
+  {
+    "id": "19",
+    "ime": "Spider-Man Miles Morales",
+    "zanr": "Action",
+    "godina": 2020,
+    "rating": 8.8,
+    "popust": 35,
+    "osnovna_cena": 50.00
+  },
+  {
+    "id": "20",
+    "ime": "Call of Duty: Modern Warfare II",
+    "zanr": "Shooter",
+    "godina": 2022,
+    "rating": 7.9,
+    "popust": 20,
+    "osnovna_cena": 70.00
+  },
+  {
+    "id": "21",
+    "ime": "Battlefield 1",
+    "zanr": "Shooter",
+    "godina": 2016,
+    "rating": 8.4,
+    "popust": 70,
+    "osnovna_cena": 40.00
+  },
+  {
+    "id": "22",
+    "ime": "Battlefield V",
+    "zanr": "Shooter",
+    "godina": 2018,
+    "rating": 7.8,
+    "popust": 65,
+    "osnovna_cena": 50.00
+  },
+  {
+    "id": "23",
+    "ime": "DOOM Eternal",
+    "zanr": "Shooter",
+    "godina": 2020,
+    "rating": 9.0,
+    "popust": 50,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "24",
+    "ime": "Minecraft",
+    "zanr": "Sandbox",
+    "godina": 2011,
+    "rating": 9.4,
+    "popust": 10,
+    "osnovna_cena": 30.00
+  },
+  {
+    "id": "25",
+    "ime": "FIFA 23",
+    "zanr": "Sports",
+    "godina": 2022,
+    "rating": 7.6,
+    "popust": 75,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "26",
+    "ime": "EA Sports FC 24",
+    "zanr": "Sports",
+    "godina": 2023,
+    "rating": 7.4,
+    "popust": 50,
+    "osnovna_cena": 70.00
+  },
+  {
+    "id": "27",
+    "ime": "The Last of Us Part I",
+    "zanr": "Action",
+    "godina": 2022,
+    "rating": 9.3,
+    "popust": 30,
+    "osnovna_cena": 70.00
+  },
+  {
+    "id": "28",
+    "ime": "The Last of Us Part II",
+    "zanr": "Action",
+    "godina": 2020,
+    "rating": 9.1,
+    "popust": 45,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "29",
+    "ime": "Starfield",
+    "zanr": "RPG",
+    "godina": 2023,
+    "rating": 7.8,
+    "popust": 20,
+    "osnovna_cena": 70.00
+  },
+  {
+    "id": "30",
+    "ime": "Baldur's Gate 3",
+    "zanr": "RPG",
+    "godina": 2023,
+    "rating": 9.8,
+    "popust": 15,
+    "osnovna_cena": 60.00
+  },
+  {
+    "id": "31",
+    "ime": "Control",
+    "zanr": "Action",
+    "godina": 2019,
+    "rating": 8.7,
+    "popust": 55,
+    "osnovna_cena": 40.00
+  }
+]
+
+}

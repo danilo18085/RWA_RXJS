@@ -76,11 +76,11 @@ button:active
 {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-top: 120px;
+    margin-left: 110px;
+    margin-right: 110px;
 
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 
 .div_gornji_main
@@ -104,7 +104,7 @@ button:active
 
     margin: 20px;
 
-    background-color: green;
+    /*background-color: green;*/
 }
 
 .div_za_search
@@ -122,12 +122,13 @@ button:active
     display: flex;
     flex-direction: column;
     margin: 10px;
+    margin-bottom: 20px;
 
     max-width: 256px;
     height: auto;
 
     color: #ffffff;          
-    background-color: #2e2d2c;
+    background-color: #3f3e3d;
 
     border-radius: 14px;
     box-shadow:
@@ -164,4 +165,16 @@ button:active
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.skup_igrica_kontejner
+{
+    width: 75%;
+}
+
+.kasa_div
+{
+    width: 25%;
+
+    background-color: purple;
 }

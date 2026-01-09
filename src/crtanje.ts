@@ -68,7 +68,8 @@ export function crtaj_kontejner_za_jednu_igricu(naziv_igre : string) : HTMLDivEl
     kontejner_igrica.id = ("kontejner_igrica_" + naziv_igre)
 
     kontejner_igrica.innerHTML = `
-     <img src="./src/Slike/FarCry6.png" alt="FarCry6" class="image_wrapper">
+     <img src="./src/Slike/1.jpg" alt="FarCry6" class="image_wrapper">
+     <h3>Far Cry 6</h3>
      <p>Zanr: RPG</p>
      <p>Godina: 2021</p>
      <p>Rating: 9.8</p>
