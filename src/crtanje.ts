@@ -1,3 +1,4 @@
+import { igrica } from "./Interfejsi/IgricaInterface"
 
 export function postavi_dva_glavna_diva() : void
 {
@@ -61,23 +62,23 @@ export function crtaj_donji_main_div() : void
 }
 
 
-export function crtaj_kontejner_za_jednu_igricu(naziv_igre : string) : HTMLDivElement
+export function crtaj_kontejner_za_jednu_igricu(igra : igrica) : HTMLDivElement
 {
     const kontejner_igrica = document.createElement("div")
     kontejner_igrica.className = "kontejner_igrica"
-    kontejner_igrica.id = ("kontejner_igrica_" + naziv_igre)
+    kontejner_igrica.id = ("kontejner_igrica_" + igra.id)
 
     kontejner_igrica.innerHTML = `
-     <img src="./src/Slike/1.jpg" alt="FarCry6" class="image_wrapper">
-     <h3>Far Cry 6</h3>
-     <p>Zanr: RPG</p>
-     <p>Godina: 2021</p>
-     <p>Rating: 9.8</p>
+     <img src="./src/Slike/${igra.id}.jpg" alt="FarCry6" class="image_wrapper">
+     <h3>${igra.ime}</h3>
+     <p>Zanr: ${igra.zanr}</p>
+     <p>Godina: ${igra.godina}</p>
+     <p>Rating: ${igra.rating}</p>
      <div class="divider_linija"></div>
      
      <div class="cena_kontejner">
-     <h3>Cena 30.12$</h3>
-     <h3>-15%</h3>
+     <h3>Cena ${izracunaj_cenu(igra.osnovna_cena, igra.popust)}$</h3>
+     <h3>-${igra.popust}%</h3>
      </div>
       
      <button>KUPI</button>
@@ -85,3 +86,7 @@ export function crtaj_kontejner_za_jednu_igricu(naziv_igre : string) : HTMLDivEl
     return kontejner_igrica
 }
 
+function izracunaj_cenu(osnovna_cena : number, popust : number) : string
+{
+    return ((osnovna_cena * popust) / 100).toFixed(2)
+}

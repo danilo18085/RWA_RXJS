@@ -104,7 +104,7 @@ button:active
 
     margin: 20px;
 
-    /*background-color: green;*/
+    background-color: green;
 }
 
 .div_za_search
@@ -169,6 +169,10 @@ button:active
 
 .skup_igrica_kontejner
 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 75%;
 }
 

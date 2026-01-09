@@ -1,7 +1,7 @@
 
 export interface igrica
 {
-    id: number,
+    id: string,
     ime: string,
     zanr: string,
     godina: number,
