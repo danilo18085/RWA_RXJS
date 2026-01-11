@@ -48,17 +48,17 @@ export function crtaj_gornji_main_div() : void
 export function crtaj_donji_main_div() : void
 {
     const skup_igrica_kontejner = document.createElement("div")
-    const kasa_div = document.createElement("div")
+    const korpa_kontejner = document.createElement("div")
 
     skup_igrica_kontejner.className = "skup_igrica_kontejner"
     skup_igrica_kontejner.id = "skup_igrica_kontejner"
 
-    kasa_div.className = "kasa_div"
-    kasa_div.id = "kasa_div"
+    korpa_kontejner.className = "korpa_kontejner"
+    korpa_kontejner.id = "korpa_kontejner"
 
     const donji_main_div = document.getElementById("div_donji_main")
     donji_main_div.appendChild(skup_igrica_kontejner)
-    donji_main_div.appendChild(kasa_div)
+    donji_main_div.appendChild(korpa_kontejner)
 }
 
 
@@ -77,11 +77,11 @@ export function crtaj_kontejner_za_jednu_igricu(igra : igrica) : HTMLDivElement
      <div class="divider_linija"></div>
      
      <div class="cena_kontejner">
-     <h3>Cena ${izracunaj_cenu(igra.osnovna_cena, igra.popust)}$</h3>
-     <h3>-${igra.popust}%</h3>
+        <h3>${izracunaj_cenu(igra.osnovna_cena, igra.popust)}$</h3>
+        <h3>-${igra.popust}%</h3>
      </div>
       
-     <button>KUPI</button>
+     <button>Dodaj u korpu</button>
     `
     return kontejner_igrica
 }
@@ -97,3 +97,50 @@ export function crtaj_header() : void
     h.className = "header"
     document.body.appendChild(h)
 }
+
+
+export function crtaj_korpu()
+{
+    const korpa_kontejner = document.getElementById("korpa_kontejner")
+
+    korpa_kontejner.innerHTML = `
+        <div class="naziv_korpe">
+        </div>
+
+        <div class="igrice_u_korpi" id="igrice_u_korpi">
+        </div>
+
+        <div class="cena_kontejner visina">
+            <h3>Ukupno:</h3>
+            <h3>54$</h3>
+        </div>
+        <div class="divider_linija max_velicina"></div>
+
+        <button>Placanje</button>
+    `
+}
+
+export function element_korpe(nesto : string)
+{
+    const igrice_u_korpi = document.getElementById("igrice_u_korpi")
+    const element_div = document.createElement("div")
+
+    element_div.id = "element1"
+    element_div.className = "element_div"
+
+    element_div.innerHTML = 
+    `
+        <div class="element_mali_div">
+            <p>${nesto}</p>
+            <p class="mali_padding">50.90$</p>
+        </div>
+        <div class="element_x">
+            <p>X</p>
+        </div>
+    `
+    igrice_u_korpi.appendChild(element_div)
+}
+
+
+
+

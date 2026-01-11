@@ -1,5 +1,6 @@
-import { crtaj_donji_main_div, crtaj_gornji_main_div, crtaj_header, crtaj_kontejner_za_jednu_igricu, postavi_dva_glavna_diva } from "./crtanje";
+import { crtaj_donji_main_div, crtaj_gornji_main_div, crtaj_header, crtaj_kontejner_za_jednu_igricu, crtaj_korpu, element_korpe, postavi_dva_glavna_diva } from "./crtanje";
 import { igrica } from "./Interfejsi/IgricaInterface";
+
 
 crtaj_header()
 postavi_dva_glavna_diva()
@@ -36,8 +37,9 @@ async function vrati_sve()
 vrati_sve()
 
 
-const kasa_div = document.getElementById("kasa_div")
-let p = document.createElement("p")
-p.innerHTML = "LOREM IPSUM DOLOR DOLOR"
-kasa_div.appendChild(p)
 
+
+crtaj_korpu()
+element_korpe("nekaidasdasda sdgrasasd asdasd asdasdas asdasdasd asda")
+element_korpe("Red Dead Redemption 2")
+element_korpe("Sekiro: Shadows die Twice")

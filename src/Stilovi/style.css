@@ -133,7 +133,7 @@ button:active
     margin: 10px;
     margin-bottom: 20px;
 
-    max-width: 256px;
+    max-width: 250px;
     height: auto;
 
     color: #ffffff;          
@@ -147,17 +147,9 @@ button:active
 
 }
 
-.divider_linija
-{
-  height: 1px;
-  background-color: #10b981;
-  width: 100%;
-  margin: 10px 0;
-}
-
 .image_wrapper
 {
-    width: 256px;
+    width: 250px;
     aspect-ratio: 1 / 1;
 }
 
@@ -168,11 +160,29 @@ button:active
     object-fit: contain;
 }
 
+.divider_linija
+{
+  height: 1px;
+  background-color: #10b981;
+  width: 100%;
+  margin: 10px 0;
+}
 
+.max_velicina
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 300px;
+}
 .cena_kontejner
 {
     display: flex;
     flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 300px;
+    
     justify-content: space-between;
 }
 
@@ -185,9 +195,70 @@ button:active
     width: 75%;
 }
 
-.kasa_div
-{
-    width: 25%;
 
-    background-color: purple;
+.korpa_kontejner
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 25%;
+    margin-left: 20px;
+}
+
+.naziv_korpe
+{
+    background-color: #10b981;
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+}
+
+.visina 
+{
+    height: 20px;
+}
+
+.igrice_u_korpi
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.element_div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+.element_mali_div
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 6px;
+    align-items: center;
+}
+
+.element_x
+{
+    display: flex;
+    align-items: center;
+    color: red;
+    border-left: 3px solid red;
+    padding-left: 4px;
+
+}
+
+.mali_padding
+{
+    padding-left: 4px;
 }
