@@ -1,6 +1,6 @@
 
 
-export function element_korpe(nesto? : string)
+export function element_korpe(nesto? : string) : void
 {
     const igrice_u_korpi = document.getElementById("igrice_u_korpi")
     const element_div = document.createElement("div")

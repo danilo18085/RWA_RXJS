@@ -24,7 +24,7 @@ export function crtaj_gornji_main_div() : void
     const div_za_search = document.createElement("div")
 
     div_za_search.className = "div_za_search"
-    header_text.innerHTML = "Games Prodavnica"
+    header_text.innerHTML = "Game Shop"
 
     gornji_main.appendChild(header_text)
     gornji_main.appendChild(div_za_search)

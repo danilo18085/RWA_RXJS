@@ -1,6 +1,5 @@
 
-
-export function postavi_zanr_box()
+export function postavi_zanr_box() : void
 {
     const zanr_box_div = document.createElement("div")
     zanr_box_div.className = "zanr_box_div"
