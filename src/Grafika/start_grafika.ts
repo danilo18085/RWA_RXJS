@@ -7,7 +7,7 @@ import { postavi_notifikacije } from "./notifikacije";
 import { postavi_slajder } from "./slajder";
 import { postavi_zanr_box} from "./zanr_box";
 
-export function start() : void
+export function start_grafika() : void
 {
     crtaj_header()
     postavi_dva_glavna_diva()

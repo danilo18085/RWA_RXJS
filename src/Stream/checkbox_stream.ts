@@ -9,8 +9,7 @@ export function checkbox_sub()
     checkbox$ = fromEvent(checkboxContainer, 'change').pipe(
         map(() => {
             const checked = checkboxContainer.querySelectorAll<HTMLInputElement>('input[type="checkbox"]:checked')
-            return Array.from(checked).map(cb => cb.value)
-            }),
+            return Array.from(checked).map(cb => cb.value)}),
         startWith([])
     )
 }

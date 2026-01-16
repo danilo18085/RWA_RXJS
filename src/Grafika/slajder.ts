@@ -6,6 +6,7 @@ export function postavi_slajder() : void
     slajd_kontejner.className = "slajder_kontejner"
 
     const slajder = document.createElement("input")
+    slajder.id = "slajder"
     slajder.type = "range"
     slajder.min = "1"
     slajder.max = "100"
