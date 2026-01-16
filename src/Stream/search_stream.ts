@@ -1,4 +1,4 @@
-import { fromEvent, map, debounceTime, distinctUntilChanged, startWith, Subject, Observable, tap } from "rxjs";
+import { fromEvent, map, debounceTime, distinctUntilChanged, startWith, Subject, Observable, tap, BehaviorSubject } from "rxjs";
 
 
 export let search$ = new Observable<string>()
