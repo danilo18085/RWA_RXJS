@@ -1,5 +1,4 @@
 
-
 export interface Notifikacija 
 {
   poruka: string,

@@ -1,6 +1,5 @@
 import { igrica } from "../Interfejsi/IgricaInterface"
 import { dugme_dodaj_u_korpu$ } from "../Stream/button_stream"
-import { notifikacija$ } from "../Stream/notifikacija_stream"
 
 export function crtaj_kontejner_za_jednu_igricu(igra : igrica) : HTMLDivElement
 {

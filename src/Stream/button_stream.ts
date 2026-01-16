@@ -1,4 +1,4 @@
-import { fromEvent, Observable, Subject, tap, throttleTime } from "rxjs";
+import { fromEvent, Observable, Subject, throttleTime } from "rxjs";
 import { notifikacija$ } from "./notifikacija_stream";
 import { igrica } from "../Interfejsi/IgricaInterface";
 import { azuriraj_ukupnu_cenu, dodaj_element_u_korpu } from "../Grafika/element_u_korpi";
@@ -26,8 +26,8 @@ export function dugme_placanje_func() : void
         const ukupna_cena = document.getElementById("ukupna_cena")
         ukupna_cena.innerHTML = "0$"
         
-        setTimeout(() => {notifikacija$.next({poruka: "Uspesno ste porucili igre!", trajanje: 5000})}, 700)
-        setTimeout(() => {notifikacija$.next({poruka: "Bicete preusmereni na stranicu za placanje", trajanje: 5000})}, 2000)
+        notifikacija$.next({poruka: "Uspesno ste porucili igre!", trajanje: 5000})
+        notifikacija$.next({poruka: "Bicete preusmereni na stranicu za placanje", trajanje: 5000})
     }
 }
 

@@ -1,11 +1,18 @@
-import { Subject, tap } from "rxjs";
+import { concatMap, delay, of, Subject } from "rxjs";
 import { Notifikacija } from "../Interfejsi/notifikacijeInterface";
 
 
-export const notifikacija$ = new Subject<Notifikacija>()
+export let notifikacija$ = new Subject<Notifikacija>()
+
+export function notifikacija_sub() : void
+{
+    notifikacija$.pipe(
+        concatMap(x => of(x).pipe(delay(2000)))
+    ).subscribe((x : Notifikacija) => showToast(x))
+}
 
 
-export function showToast(notf : Notifikacija) 
+export function showToast(notf : Notifikacija) : void
 {
     const container = document.getElementById("notifikacije")
     const toast = document.createElement("div");

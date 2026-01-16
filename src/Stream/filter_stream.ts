@@ -1,4 +1,4 @@
-import { combineLatest, map, Observable, switchMap } from "rxjs";
+import { combineLatest, map, Observable } from "rxjs";
 import { checkbox$ } from "./checkbox_stream";
 import { search$ } from "./search_stream";
 import { slajder$ } from "./slajder_stream";
@@ -9,7 +9,7 @@ import { igrica } from "../Interfejsi/IgricaInterface";
 
 export let filter$ = new Observable<Filter>()
 
-export function filter_sub()
+export function filter_sub() : void
 {
     filter$ = combineLatest([search$, checkbox$, slajder$]).pipe(
     map(([search_prom, zanr_prom, max_cena_prom]): Filter => 

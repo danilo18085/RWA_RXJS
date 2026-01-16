@@ -3,9 +3,9 @@ import { debounceTime, distinctUntilChanged, fromEvent, map, Observable, startWi
 
 export let slajder$ = new Observable<number>()
 
-export function range_sub()
+export function range_sub() : void
 {
-    const cenaRange = document.getElementById('slajder') as HTMLInputElement;
+    const cenaRange = document.getElementById('slajder') as HTMLInputElement
 
     slajder$ = fromEvent(cenaRange, 'input').pipe(
         map(() => Number(cenaRange.value)),

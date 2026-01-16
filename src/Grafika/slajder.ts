@@ -1,7 +1,7 @@
 
 export function postavi_slajder() : void
 {
-    const slajd_kontejner = document.createElement("div") //div koji sve obuhvata
+    const slajd_kontejner = document.createElement("div")
     slajd_kontejner.id = "slajder_kontejner"
     slajd_kontejner.className = "slajder_kontejner"
 
