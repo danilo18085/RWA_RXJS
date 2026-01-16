@@ -24,7 +24,7 @@ export function crtaj_kontejner_za_jednu_igricu(igra : igrica) : HTMLDivElement
     return kontejner_igrica
 }
 
-function izracunaj_cenu(osnovna_cena : number, popust : number) : string
+export function izracunaj_cenu(osnovna_cena : number, popust : number) : string
 {
     return ((osnovna_cena * (100 - popust)) / 100 - 0.01).toFixed(2)
 }

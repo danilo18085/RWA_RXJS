@@ -17,32 +17,10 @@ export function start_grafika() : void
     postavi_slajder()
     postavi_zanr_box()
     postavi_notifikacije()
-    vrati_sve()
+    //vrati_sve()
 }
 
 
-async function vrati_sve() : Promise<any>
-{
 
-    const rez = await fetch(`http://localhost:3000/igrice`)
-    const niz : any[] = await rez.json()
-    
-
-    const skup_igrica_kontejner = document.getElementById("skup_igrica_kontejner")
-
-    niz.forEach(igra => {
-        const nova_igra : igrica =
-        {
-            id: igra.id,
-            ime: igra.ime,
-            zanr: igra.zanr,
-            godina: igra.godina,
-            rating: igra.rating,
-            popust: igra.popust,
-            osnovna_cena: igra.osnovna_cena
-        }
-        skup_igrica_kontejner.appendChild(crtaj_kontejner_za_jednu_igricu(nova_igra))
-    });
-}
 
 

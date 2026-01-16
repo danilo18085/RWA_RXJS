@@ -14,3 +14,9 @@ export function range_sub()
         startWith(Number(cenaRange.value))
         )
 }
+
+export function promeni_vrednost_slajder_labele(nova_vrednost : number) : void
+{
+    const slajder_labela = document.getElementById("labela_slajdera")
+    slajder_labela.innerHTML = String(nova_vrednost) + "$"
+}

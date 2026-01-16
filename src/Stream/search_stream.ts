@@ -1,4 +1,4 @@
-import { fromEvent, map, debounceTime, distinctUntilChanged, startWith, Subject, Observable, tap, BehaviorSubject } from "rxjs";
+import { fromEvent, map, debounceTime, distinctUntilChanged, startWith, Subject, Observable, tap, BehaviorSubject, filter } from "rxjs";
 
 
 export let search$ = new Observable<string>()
@@ -9,6 +9,7 @@ export function search_sub()
 
     search$ = fromEvent(searchInput, 'input').pipe(
         map(() => searchInput.value.trim()),
+        filter((rec : string) => rec.length >= 2),
         debounceTime(300),
         distinctUntilChanged(),
         startWith(''),
