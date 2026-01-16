@@ -8,10 +8,10 @@ export function postavi_slajder() : void
     const slajder = document.createElement("input")
     slajder.id = "slajder"
     slajder.type = "range"
-    slajder.min = "0"
-    slajder.max = "100"
+    slajder.min = "5"
+    slajder.max = "80"
     slajder.step = "5"
-    slajder.value = "100"
+    slajder.value = "80"
 
     slajd_kontejner.appendChild(slajder)
 
@@ -24,8 +24,8 @@ export function postavi_slajder() : void
 
     lab2.id = "labela_slajdera"
     lab1.innerHTML = "1$"
-    lab2.innerHTML = "100$"
-    lab3.innerHTML = "100$"
+    lab2.innerHTML = "80$"
+    lab3.innerHTML = "80$"
 
     labele_div.append(lab1, lab2, lab3)
 

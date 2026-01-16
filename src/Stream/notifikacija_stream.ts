@@ -1,19 +1,11 @@
 import { Subject, tap } from "rxjs";
-import { Notifikacije } from "../Interfejsi/notifikacijeInterface";
+import { Notifikacija } from "../Interfejsi/notifikacijeInterface";
 
 
-export const notifikacija$ = new Subject<Notifikacije>()
+export const notifikacija$ = new Subject<Notifikacija>()
 
 
-export function notifikacija_sub() : void
-{
-    notifikacija$.pipe(
-        tap((x : Notifikacije) => showToast(x))
-    ).subscribe()
-}
-
-
-function showToast(notf : Notifikacije) 
+export function showToast(notf : Notifikacija) 
 {
     const container = document.getElementById("notifikacije")
     const toast = document.createElement("div");

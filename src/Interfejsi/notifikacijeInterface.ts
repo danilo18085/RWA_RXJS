@@ -1,6 +1,6 @@
 
 
-export interface Notifikacije 
+export interface Notifikacija 
 {
   poruka: string,
   trajanje: number

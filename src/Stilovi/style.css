@@ -265,7 +265,8 @@ button:active
     align-items: center;
     color: red;
     border-left: 3px solid red;
-    padding-left: 4px;
+    padding-left: 7px;
+    margin-left: 5px;
 
 }
 
@@ -347,4 +348,10 @@ button:active
 {
   opacity: 1;
   transform: translateY(0);
+}
+
+.no-select 
+{
+  user-select: none;
+  cursor: pointer;
 }

@@ -13,7 +13,7 @@ export function crtaj_korpu() : void
         </div>
         <div class="divider_linija max_velicina"></div>
 
-        <button id="test">Placanje</button>
+        <button id="dugme_placanje">Placanje</button>
     </div>
     `
 }
