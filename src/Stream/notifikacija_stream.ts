@@ -1,34 +1,28 @@
-import { Subject, mergeMap, of, tap, delay, BehaviorSubject } from "rxjs";
+import { Subject, tap } from "rxjs";
 import { Notifikacije } from "../Interfejsi/notifikacijeInterface";
 
 
-export const notifikacijaSubject$ = new Subject<Notifikacije>()
+export const notifikacija$ = new Subject<Notifikacije>()
 
 
 export function notifikacija_sub() : void
 {
-    notifikacijaSubject$.pipe(
-        mergeMap(n =>
-            of(n).pipe(
-        tap(() => showToast(n.poruka)),
-        delay(n.trajanje)
-    )
-  )
-).subscribe()
-
+    notifikacija$.pipe(
+        tap((x : Notifikacije) => showToast(x))
+    ).subscribe()
 }
 
 
-function showToast(text: string) 
+function showToast(notf : Notifikacije) 
 {
     const container = document.getElementById("notifikacije")
     const toast = document.createElement("div");
     toast.className = "toast show";
-    toast.textContent = text;
+    toast.textContent = notf.poruka;
 
     container.appendChild(toast);
 
-    setTimeout(() => toast.remove(), 3300);
+    setTimeout(() => toast.remove(), notf.trajanje);
 }
 
 

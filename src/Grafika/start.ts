@@ -16,8 +16,8 @@ export function start() : void
     crtaj_korpu()
     postavi_slajder()
     postavi_zanr_box()
-    vrati_sve()
     postavi_notifikacije()
+    vrati_sve()
 }
 
 

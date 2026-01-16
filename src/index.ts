@@ -1,17 +1,23 @@
-import { delay, mergeMap, of, Subject, tap } from "rxjs";
+import { debounceTime, delay, distinctUntilChanged, fromEvent, map, mergeMap, of, startWith, Subject, tap } from "rxjs";
 import { start } from "./Grafika/start";
-import { notifikacija_sub, notifikacijaSubject$ } from "./Stream/notifikacija_stream";
+import { notifikacija_sub } from "./Stream/notifikacija_stream";
+import { search$, search_sub } from "./Stream/search_stream";
 
-
+//-----------------------------------------------
 start()
-
 notifikacija_sub()
+//------------------------------------------------
 
-const dugme = document.getElementById("test")
+search_sub()
 
-dugme.addEventListener('click', () => {
-  notifikacijaSubject$.next({poruka: "Ovo je neka poruka", trajanje: 3000})
-});
+search$.subscribe((x) => console.log("A: ", x))
+search$.subscribe((x) => console.log("B: ", x))
+
+
+
+
+
+
 
 
 

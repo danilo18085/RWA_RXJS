@@ -31,16 +31,13 @@ export function crtaj_gornji_main_div() : void
 
 
     const input_bar = document.createElement("input")
-    //const search_dugme = document.createElement("button")
 
     input_bar.type = "text"
     input_bar.placeholder = "Pretrazite igricu..."
     input_bar.autocomplete = "off"
+    input_bar.id = "input_za_search"
 
     div_za_search.appendChild(input_bar)
-    //div_za_search.appendChild(search_dugme)
-
-    //search_dugme.innerHTML = "Pretraga"
 }
 
 
